@@ -1,0 +1,82 @@
+/* ken buRns effect */
+.ken-burns {
+
+    .image_container {
+        overflow: hidden;
+    }
+
+    img {
+        animation-name: kenBurns;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        transform-origin: center;
+        animation-duration: 10s;
+        transform-origin: center;        
+    }
+
+    &.duration5 {
+
+        img {
+            animation-duration: 5s;
+        }
+    }
+
+    &.duration7 {
+
+        img {
+            animation-duration: 7s;
+        }
+    }
+
+    &.duration15 {
+
+        img {
+            animation-duration: 15s;
+        }
+    }
+
+    &.delay100 {
+
+        img {
+            animation-delay: 100ms;
+        }
+    }
+
+    &.delay200 {
+
+        img {
+            animation-delay: 200ms;
+        }
+    }
+
+    &.delay300 {
+
+        img {
+            animation-delay: 300ms;
+        }
+    }
+
+    &.delay400 {
+
+        img {
+            animation-delay: 400ms;
+        }
+    }
+
+    &.delay500 {
+
+        img {
+            animation-delay: 500ms;
+        }
+    }
+    
+}
+@keyframes kenBurns {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1) translateX(20px);
+    }
+}
